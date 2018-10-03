@@ -12,6 +12,10 @@ int polyCount;
 
 public:
 
+List();
+void insert( const ItemType& newEntry ); // Insert at beginning of list
+void print(); // Display list contents to standard output
+
 };
 
 #endif
