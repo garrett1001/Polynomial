@@ -1,9 +1,9 @@
-#ifndef _POLYNOMIAL_H_
-#define _POLYNOMIAL_H_
+#ifndef POLYNOMIAL_H
+#define POLYNOMIAL_H
     
 #include "Node.h"
 
-class polynomial
+class Polynomial
 {
 private:
 
@@ -12,9 +12,9 @@ int polyCount;
 
 public:
 
-List();
-void insert( const ItemType& newEntry ); // Insert at beginning of list
-void print(); // Display list contents to standard output
+Polynomial();
+void insert( const ItemType& newEntry ); // Insert at beginning
+void print(); // Display to standard output
 
 };
 
