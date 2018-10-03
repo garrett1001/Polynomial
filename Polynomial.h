@@ -14,5 +14,4 @@ public:
 
 };
 
-#include "Polynomial.cpp"
 #endif
