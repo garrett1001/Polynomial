@@ -1,9 +1,12 @@
 #include <iostream>
+#include <string>
 #include "Polynomial.h"
+
+using namespace std;
 
 int main()
 {
-    polynomial poly;
+    polynomial<string> poly;
     
     string input;
     while( cin >> input )
