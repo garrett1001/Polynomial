@@ -3,7 +3,7 @@
 
 int main()
 {
-    Polynomial polly1;
+    polynomial polly1;
   
   
   
