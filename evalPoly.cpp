@@ -3,9 +3,14 @@
 
 int main()
 {
-    polynomial polly1;
+    polynomial poly;
+    
+    string input;
+    while( cin >> input )
+            poly.insert( input );
+
+    poly.print();
   
-  
-  
+    
     return 0;
 }
