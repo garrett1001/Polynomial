@@ -64,11 +64,11 @@ int main()
             
             while(space>0)
             {
-                cout<<" "<<endl;
+                cout<<" ";
                 space--;
             }
             
-            if(space=0)
+            if(space==0)
             {
                 space++;
             }
