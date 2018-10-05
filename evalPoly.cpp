@@ -57,9 +57,9 @@ int main()
         for( auto term : listOfXs )    // Use range-based for loop to iterate through Xs
         {
             stringstream convert(term); // object from the class stringstream
-            double x = 0;
+            int x = 0;
         
-            convert >> x;    // converts string to unsigned
+            convert >> x;    // converts string to int
         
             cout<<poly.solve( x )<<" ";    // solves and outputs solved polynomial
         }
