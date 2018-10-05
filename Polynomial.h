@@ -7,13 +7,12 @@ template<class ItemType>
 class Polynomial
 {
     private:
-        Node<ItemType>* headPtr; // Pointer to first node
-        int polyCount;
+        Node<ItemType>* headPtr;    // Pointer to first node
 
     public:
         Polynomial();
-        void insert( const ItemType& newEntry ); // Insert at beginning
-        void print(); // Display to standard output
+        void insert( const ItemType& newEntry );    // inserts term into beginning of polynomial
+        double solve(double x);    // solves polynomial
 };
 
 #include"Polynomial.cpp"
