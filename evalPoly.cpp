@@ -22,10 +22,9 @@ vector<string> split( const string& s , char delimiter ) //splits an imput
 
 int main()
 {
-    Polynomial<pair<double, unsigned>> poly;
-    
     while(cin)// runs while there is valid imput
     {
+        Polynomial<pair<double, unsigned>> poly;
         string input;             // input string
         char   delimiter = ' ';   // what separates terms in the input string
         pair <double, unsigned> CTERM;
