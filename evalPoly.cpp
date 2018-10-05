@@ -30,6 +30,7 @@ int main()
         pair <double, unsigned> CTERM;
         CTERM.first = 0;    // constant
         CTERM.second = 0;    //exponet
+        int space = 0;
 
         getline( cin , input );    // read in a string as a line of text from standard input
 
@@ -60,8 +61,19 @@ int main()
             int x = 0;
         
             convert >> x;    // converts string to int
-        
-            cout<<poly.solve( x )<<" ";    // solves and outputs solved polynomial
+            
+            while(space>0)
+            {
+                cout<<" "<<endl;
+                space--;
+            }
+            
+            if(space=0)
+            {
+                space++;
+            }
+            
+            cout<<poly.solve( x );    // solves and outputs solved polynomial
         }
         cout<<endl;
     }
