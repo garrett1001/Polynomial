@@ -27,8 +27,8 @@ int main()
     int run = 1;
     pair <double, unsigned> CTERM;
     
-    //if(cin)    // runs while there is valid imput
-    //{
+    while(cin)    // runs while there is valid imput
+    {
         Polynomial<pair<double, unsigned>> poly;
         CTERM.first = 0;    // constant
         CTERM.second = 0;    //exponet
@@ -78,7 +78,7 @@ int main()
             cout<<poly.solve( x );    // solves and outputs solved polynomial
         }
         cout<<endl;
-    //}
+    }
     
     return 0;
 }
