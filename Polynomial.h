@@ -12,7 +12,7 @@ class Polynomial
     public:
         Polynomial();
         void insert( const ItemType& newEntry );    // inserts term into beginning of polynomial
-        int solve(int x);    // solves polynomial
+        double solve(double x);    // solves polynomial
 };
 
 #include"Polynomial.cpp"

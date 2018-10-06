@@ -24,11 +24,11 @@ int main()
 {
     string input;             // input string
     char   delimiter = ' ';   // what separates terms in the input string
-    pair <double, int> CTERM;
+    pair <double, unsigned> CTERM;
     
-    while(cin)// runs while there is valid imput
+    while(cin)    // runs while there is valid imput
     {
-        Polynomial<pair<double, int>> poly;
+        Polynomial<pair<double, unsigned>> poly;
         CTERM.first = 0;    // constant
         CTERM.second = 0;    //exponet
         int space = 0;
@@ -59,7 +59,7 @@ int main()
         for( auto term : listOfXs )    // Use range-based for loop to iterate through Xs
         {
             stringstream convert(term); // object from the class stringstream
-            int x = 0;
+            double x = 0;
         
             convert >> x;    // converts string to int
             

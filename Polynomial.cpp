@@ -20,15 +20,15 @@ void Polynomial<ItemType>::insert( const ItemType& newEntry )    // inserts term
 }
 
 template<class ItemType>
-int Polynomial<ItemType>::solve(int x)    // solves polynomial and returns the sum
+double Polynomial<ItemType>::solve(double x)    // solves polynomial and returns the sum
 {
-    int sum = 0;
+    double sum = 0;
     Node<ItemType>* curPtr = headPtr;
 
     while (curPtr != nullptr)    //traverses through linked list
     {
         double c = (curPtr->getItem()).first;    //gets the constant out of the term
-        int k = (curPtr->getItem()).second;    //gets the exponent out of the term
+        unsigned k = (curPtr->getItem()).second;    //gets the exponent out of the term
         
         sum = sum+(c*pow(x,k));    //sums
         
