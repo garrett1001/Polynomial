@@ -24,10 +24,11 @@ int main()
 {
     string input;             // input string
     char   delimiter = ' ';   // what separates terms in the input string
+    int run = 1;
     pair <double, unsigned> CTERM;
     
-    while(cin)    // runs while there is valid imput
-    {
+    //if(cin)    // runs while there is valid imput
+    //{
         Polynomial<pair<double, unsigned>> poly;
         CTERM.first = 0;    // constant
         CTERM.second = 0;    //exponet
@@ -77,8 +78,7 @@ int main()
             cout<<poly.solve( x );    // solves and outputs solved polynomial
         }
         cout<<endl;
-    }
+    //}
     
-  
     return 0;
 }
